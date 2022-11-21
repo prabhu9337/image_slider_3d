@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+        integrity="sha512-UJfAaOlIRtdR+0P6C3KUoTDAxVTuy3lnSXLyLKlHYJlcSU8Juge/mjeaxDNMlw9LgeIotgz5FP8eUQPhX1q10A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            background-color: #262626;
+        }
+
+        .mainDiv {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 20px;
+        }
+
+        .leftDiv {
+            width: 50%;
+        }
+
+        .rightDiv {
+            width: 50%;
+        }
+
+        .carousel {
+            height: 500px;
+        }
+
+        .carousel .carousel-item {
+            width: 400px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mainDiv">
+        <div class="leftDiv">
+            <h1>Photography</h1>
+            <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, blanditiis.</h3>
+        </div>
+
+        <div class="rightDiv">
+            <div class="carousel">
+                <a href="#one" class="carousel-item">
+                    <img src="https://cdn.pixabay.com/photo/2022/10/07/12/02/sunset-7504891_960_720.jpg" alt="">
+                </a>
+                <a href="#two" class="carousel-item">
+                    <img src="https://cdn.pixabay.com/photo/2022/10/09/08/43/road-7508538_960_720.jpg" alt="">
+                </a>
+                <a href="#three" class="carousel-item">
+                    <img src="https://cdn.pixabay.com/photo/2022/11/12/16/42/elk-7587415_960_720.jpg" alt="">
+                </a>
+                <a href="#four" class="carousel-item">
+                    <img src="https://cdn.pixabay.com/photo/2022/11/13/18/09/canyon-7589820_960_720.jpg" alt="">
+                </a>
+                <a href="#five" class="carousel-item">
+                    <img src="https://cdn.pixabay.com/photo/2022/10/17/17/37/sea-7528351_960_720.jpg" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"
+        integrity="sha512-NiWqa2rceHnN3Z5j6mSAvbwwg3tiwVNxiAQaaSMSXnRRDh5C2mk/+sKQRw8qjV1vN4nf8iK2a0b048PnHbyx+Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.carousel').carousel({
+                indicators: true,
+                autoplay: true,
+            })
+        })
+
+        $('.carousel').carousel();
+        setInterval(function () {
+            $('.carousel').carousel('next');
+        }, 3000);
+    </script>
+</body>
+
+</html>
+
+
+<!-- https://www.youtube.com/watch?v=JX5qDzWDF4U -->
